@@ -8,17 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		FAC733BB28D0964000BED611 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733BA28D0964000BED611 /* CitySightsApp.swift */; };
-		FAC733BD28D0964000BED611 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733BC28D0964000BED611 /* ContentView.swift */; };
+		FAC733BD28D0964000BED611 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733BC28D0964000BED611 /* LaunchView.swift */; };
 		FAC733BF28D0964300BED611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC733BE28D0964300BED611 /* Assets.xcassets */; };
 		FAC733C228D0964300BED611 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC733C128D0964300BED611 /* Preview Assets.xcassets */; };
+		FAC733CC28D09C5800BED611 /* ContentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733CB28D09C5800BED611 /* ContentModel.swift */; };
+		FAC733CF28D4A2D500BED611 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733CE28D4A2D500BED611 /* Business.swift */; };
+		FAC733D128D4A5A700BED611 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733D028D4A5A700BED611 /* BusinessSearch.swift */; };
+		FAC733D428D754B300BED611 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733D328D754B200BED611 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FAC733B728D0964000BED611 /* CitySightsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySightsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC733BA28D0964000BED611 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
-		FAC733BC28D0964000BED611 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FAC733BC28D0964000BED611 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
 		FAC733BE28D0964300BED611 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAC733C128D0964300BED611 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FAC733CB28D09C5800BED611 /* ContentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentModel.swift; sourceTree = "<group>"; };
+		FAC733CD28D09E5A00BED611 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FAC733CE28D4A2D500BED611 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
+		FAC733D028D4A5A700BED611 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
+		FAC733D328D754B200BED611 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +64,9 @@
 				FAC733C828D0997700BED611 /* Views */,
 				FAC733C928D0997F00BED611 /* ViewModels */,
 				FAC733CA28D0999100BED611 /* Models */,
+				FAC733D228D7548A00BED611 /* Helpers */,
 				FAC733BE28D0964300BED611 /* Assets.xcassets */,
+				FAC733CD28D09E5A00BED611 /* Info.plist */,
 				FAC733C028D0964300BED611 /* Preview Content */,
 			);
 			path = CitySightsApp;
@@ -72,7 +83,7 @@
 		FAC733C828D0997700BED611 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FAC733BC28D0964000BED611 /* ContentView.swift */,
+				FAC733BC28D0964000BED611 /* LaunchView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -80,6 +91,7 @@
 		FAC733C928D0997F00BED611 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				FAC733CB28D09C5800BED611 /* ContentModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -87,8 +99,18 @@
 		FAC733CA28D0999100BED611 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FAC733CE28D4A2D500BED611 /* Business.swift */,
+				FAC733D028D4A5A700BED611 /* BusinessSearch.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FAC733D228D7548A00BED611 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FAC733D328D754B200BED611 /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,8 +183,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FAC733BD28D0964000BED611 /* ContentView.swift in Sources */,
+				FAC733BD28D0964000BED611 /* LaunchView.swift in Sources */,
+				FAC733CF28D4A2D500BED611 /* Business.swift in Sources */,
 				FAC733BB28D0964000BED611 /* CitySightsApp.swift in Sources */,
+				FAC733D128D4A5A700BED611 /* BusinessSearch.swift in Sources */,
+				FAC733CC28D09C5800BED611 /* ContentModel.swift in Sources */,
+				FAC733D428D754B300BED611 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +319,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CitySightsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitySightsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -321,6 +348,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"CitySightsApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = CitySightsApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
