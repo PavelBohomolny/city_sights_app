@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA42562A28D762300007EF07 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733D828D75D2200BED611 /* HomeView.swift */; };
+		FA97027128D76743002B499E /* BusinessList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97027028D76743002B499E /* BusinessList.swift */; };
+		FA97027328D866C3002B499E /* BusinessSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97027228D866C3002B499E /* BusinessSection.swift */; };
+		FA97027528D866DE002B499E /* BusinessSectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA97027428D866DE002B499E /* BusinessSectionHeader.swift */; };
 		FAC733BB28D0964000BED611 /* CitySightsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733BA28D0964000BED611 /* CitySightsApp.swift */; };
 		FAC733BD28D0964000BED611 /* LaunchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733BC28D0964000BED611 /* LaunchView.swift */; };
 		FAC733BF28D0964300BED611 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAC733BE28D0964300BED611 /* Assets.xcassets */; };
@@ -15,9 +19,14 @@
 		FAC733CF28D4A2D500BED611 /* Business.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733CE28D4A2D500BED611 /* Business.swift */; };
 		FAC733D128D4A5A700BED611 /* BusinessSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733D028D4A5A700BED611 /* BusinessSearch.swift */; };
 		FAC733D428D754B300BED611 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733D328D754B200BED611 /* Constants.swift */; };
+		FAED344328D88097006AF7F0 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED344228D88097006AF7F0 /* BusinessRow.swift */; };
+		FAED344628D8A68D006AF7F0 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED344528D8A68D006AF7F0 /* BusinessDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA97027028D76743002B499E /* BusinessList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessList.swift; sourceTree = "<group>"; };
+		FA97027228D866C3002B499E /* BusinessSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSection.swift; sourceTree = "<group>"; };
+		FA97027428D866DE002B499E /* BusinessSectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSectionHeader.swift; sourceTree = "<group>"; };
 		FAC733B728D0964000BED611 /* CitySightsApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CitySightsApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAC733BA28D0964000BED611 /* CitySightsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CitySightsApp.swift; sourceTree = "<group>"; };
 		FAC733BC28D0964000BED611 /* LaunchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchView.swift; sourceTree = "<group>"; };
@@ -28,6 +37,9 @@
 		FAC733CE28D4A2D500BED611 /* Business.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Business.swift; sourceTree = "<group>"; };
 		FAC733D028D4A5A700BED611 /* BusinessSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessSearch.swift; sourceTree = "<group>"; };
 		FAC733D328D754B200BED611 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FAC733D828D75D2200BED611 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FAED344228D88097006AF7F0 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
+		FAED344528D8A68D006AF7F0 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +53,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FA97026F28D76717002B499E /* List */ = {
+			isa = PBXGroup;
+			children = (
+				FAED344428D8A650006AF7F0 /* Detail */,
+				FA97027028D76743002B499E /* BusinessList.swift */,
+				FA97027228D866C3002B499E /* BusinessSection.swift */,
+				FA97027428D866DE002B499E /* BusinessSectionHeader.swift */,
+				FAED344228D88097006AF7F0 /* BusinessRow.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
 		FAC733AE28D0963F00BED611 = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				FAC733BC28D0964000BED611 /* LaunchView.swift */,
+				FAC733D728D75D1100BED611 /* Home */,
+				FAC733D628D75D0000BED611 /* Denied */,
+				FAC733D528D75CF300BED611 /* Onboarding */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -111,6 +138,37 @@
 				FAC733D328D754B200BED611 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		FAC733D528D75CF300BED611 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		FAC733D628D75D0000BED611 /* Denied */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Denied;
+			sourceTree = "<group>";
+		};
+		FAC733D728D75D1100BED611 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FAC733D828D75D2200BED611 /* HomeView.swift */,
+				FA97026F28D76717002B499E /* List */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FAED344428D8A650006AF7F0 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				FAED344528D8A68D006AF7F0 /* BusinessDetail.swift */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -184,9 +242,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAC733BD28D0964000BED611 /* LaunchView.swift in Sources */,
+				FAED344328D88097006AF7F0 /* BusinessRow.swift in Sources */,
+				FA97027328D866C3002B499E /* BusinessSection.swift in Sources */,
+				FA97027528D866DE002B499E /* BusinessSectionHeader.swift in Sources */,
+				FA42562A28D762300007EF07 /* HomeView.swift in Sources */,
 				FAC733CF28D4A2D500BED611 /* Business.swift in Sources */,
+				FAED344628D8A68D006AF7F0 /* BusinessDetail.swift in Sources */,
 				FAC733BB28D0964000BED611 /* CitySightsApp.swift in Sources */,
 				FAC733D128D4A5A700BED611 /* BusinessSearch.swift in Sources */,
+				FA97027128D76743002B499E /* BusinessList.swift in Sources */,
 				FAC733CC28D09C5800BED611 /* ContentModel.swift in Sources */,
 				FAC733D428D754B300BED611 /* Constants.swift in Sources */,
 			);
