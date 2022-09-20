@@ -21,6 +21,7 @@
 		FAC733D428D754B300BED611 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC733D328D754B200BED611 /* Constants.swift */; };
 		FAED344328D88097006AF7F0 /* BusinessRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED344228D88097006AF7F0 /* BusinessRow.swift */; };
 		FAED344628D8A68D006AF7F0 /* BusinessDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED344528D8A68D006AF7F0 /* BusinessDetail.swift */; };
+		FAED344928D9C5A6006AF7F0 /* BusinessMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAED344828D9C5A5006AF7F0 /* BusinessMap.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		FAC733D828D75D2200BED611 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FAED344228D88097006AF7F0 /* BusinessRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessRow.swift; sourceTree = "<group>"; };
 		FAED344528D8A68D006AF7F0 /* BusinessDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessDetail.swift; sourceTree = "<group>"; };
+		FAED344828D9C5A5006AF7F0 /* BusinessMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BusinessMap.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				FAC733D828D75D2200BED611 /* HomeView.swift */,
+				FAED344728D9C568006AF7F0 /* Map */,
 				FA97026F28D76717002B499E /* List */,
 			);
 			path = Home;
@@ -169,6 +172,14 @@
 				FAED344528D8A68D006AF7F0 /* BusinessDetail.swift */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		FAED344728D9C568006AF7F0 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				FAED344828D9C5A5006AF7F0 /* BusinessMap.swift */,
+			);
+			path = Map;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -250,6 +261,7 @@
 				FAED344628D8A68D006AF7F0 /* BusinessDetail.swift in Sources */,
 				FAC733BB28D0964000BED611 /* CitySightsApp.swift in Sources */,
 				FAC733D128D4A5A700BED611 /* BusinessSearch.swift in Sources */,
+				FAED344928D9C5A6006AF7F0 /* BusinessMap.swift in Sources */,
 				FA97027128D76743002B499E /* BusinessList.swift in Sources */,
 				FAC733CC28D09C5800BED611 /* ContentModel.swift in Sources */,
 				FAC733D428D754B300BED611 /* Constants.swift in Sources */,
